@@ -1,6 +1,4 @@
 <?php
-
-//hallo
   session_start();
   if (isset($_SESSION['id'])) unset($_SESSION['id']);
   session_destroy();
@@ -61,61 +59,98 @@
 
 <body>
 
-    <div class="container content hintergrund">
+<!--Kontaktformular-->
+    <div class="container content formular" >
         <div class="row">
 
-            <!--Login Button-->
-            <div class="col-md-offset-11 col-md-1">
-                <div id="login" class="btn-group">
-                  <a href="login.php"><button  type="button" class="">Login</button></a>
-                </div>
-            </div>
+                <!--Welcome Text-->
+                <div class="col-md-12">
+                    <div class="col-md-6" style="padding-top:; text-align: justify;">
+                        <h1 style="padding-bottom:5%;">Registrierung für Newsletter<br><b>Kochen mit Toby</b></h1>
+                        <p style="padding-bottom:5%;">Hier kannst du dich für den Newletter eintragen.
+                        </p>
+                        <p>
+                            <b></b>
+                        </p>
+                    </div>
 
-            <!--Welcome Text-->
-            <div class="col-md-12">
-                <div class="col-md-offset-1 col-md-5" style="padding-top:10%; text-align: justify;">
-                    <h1 style="padding-bottom:5%;">Dein <br> PERSÖNLICHKEITSTEST</h1>
-                    <p style="padding-bottom:5%;">Du bist dir nicht sicher, was für ein Typ du bist? Welcher Beruf zu dir passt?
-                        Bist du eher ein Bastler oder doch der Denker? Oder gar beides. <br>
-                        Wir helfen dir bei der Suche.
-                        Einfach die nötigen Angaben ausfüllen, auf den Startbutton klicken und du kommst zur Umfrage.
-                    </p>
-                    <p>
-                        <b>Viel Spass!</b>
-                    </p>
-                </div>
-            </div>
+                <!--Kontaktdaten-->
 
-            <!--Inputfelder-->
-            <div class="col-md-12">
-                <div class="col-md-offset-1 col-md-5" style="padding-top:3%;">
+                    <div class="col-md-6" style="padding-top:3%; padding-bottom:5%">
+                        <form action="index.php" method="post">
+                            <!--Vorname-->
+                            <div class="form-group">
+                                <label for="InputVorname">Vorname</label>
+                                <input type="text" name="vorname" class="" id="vorname" placeholder="Vorname" value="Urs">
+                            </div>
+                            <!--Nachname-->
+                            <div class="form-group">
+                                <label for="InputNachname">Nachname</label>
+                                <input type="text" name="nachname" class="" id="nachname" placeholder="Nachname" value="Thöny">
+                            </div>
+                            <!--eMail-->
+                            <div class="form-group">
+                                <label for="InputEmail">E-Mail Adresse</label>
+                                <input type="email" name="email" class="" id="email" placeholder="E-Mail" value="urs@thoeny.ch">
+                            </div>
+                            <!--Start-->
+                            <div class="col-md-offset-10 col-md-2">
+                                <input type="submit" name="weiter" class="" value="weiter">
+                            </div>
+                        </form>
+                    </div>
+                        
+            </div>
+        </div>
+    </div>
+    <br>
+    <!--Gutschein-->
+       <div class="container content formular" >
+        <div class="row">
+
+                <!--Welcome Text-->
+                <div class="col-md-12">
+                    <div class="col-md-6" style="padding-top:; text-align: justify;">
+                        <h1 style="padding-bottom:5%;">Toby würde gerne wissen, <br><b>bist du...</b></h1>
+                    </div>
+                </div>
+
+                <!--Kategorien-->
+                <div class="col-md-offset-3 col-md-10">
+                    <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
+                         <button type="button">Fleisch</button> 
+                    </div>
+                    <div class="col-md-2" style="padding-top:3%; padding-bottom:5%">
+                         <button type="button">Veggie</button> 
+                    </div>
+                    <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
+                         <button type="button">Vegan</button> 
+                    </div>           
+                </div>
+            
+                <!--Gutscheine-->
+                 <div class="col-md-12" style="padding-top:3%; padding-bottom:5%">
                     <form action="index.php" method="post">
-                        <!--Vorname-->
-                        <div class="form-group">
-                            <label for="InputVorname">Vorname</label>
-                            <input type="text" name="vorname" class="" id="vorname" placeholder="Vorname" value="Urs">
+                        <!--Gutschein 1-->
+                        <div class="col-md-6">
+                            <input type="submit" name="gutschein1" class="" value="Gutschein 1" style="padding-top:10%; padding-bottom:10%;">
                         </div>
-                        <!--Nachname-->
-                        <div class="form-group">
-                            <label for="InputNachname">Nachname</label>
-                            <input type="text" name="nachname" class="" id="nachname" placeholder="Nachname" value="Thöny">
-                        </div>
-                        <!--Geburtsdatum-->
-                        <div class="form-group">
-                            <label for="InputGeburtsdatum">Geburtsdatum</label>
-                            <input type="date" name="geburtsdatum" class="" id="geburtsdatum" placeholder="tt.mm.jjjj" value="01.01.2000">
-                        </div>
-                        <!--eMail-->
-                        <div class="form-group">
-                            <label for="InputEmail">E-Mail Adresse</label>
-                            <input type="email" name="email" class="" id="email" placeholder="E-Mail" value="urs@thoeny.ch">
-                        </div>
-                        <div>
-                            <input type="submit" name="start" class="" value="Start">
+                        <!--Gutschein 2-->
+                        <div class="col-md-6" >
+                            <input type="submit" name="gitschein2" class="" value="Gutschein 2" style="padding-top:10%; padding-bottom:10%;">
                         </div>
                     </form>
                 </div>
-            </div>
+            
+                <!--Registrieren-->
+                <div class="col-md-12" style="padding-top:3%; padding-bottom:5%">
+                    <form action="index.php" method="post">
+                        <!--Start-->
+                        <div class="col-md-offset-10 col-md-2">
+                            <input type="submit" name="registrieren" class="" value="Registrieren">
+                        </div>
+                    </form>
+                </div>
         </div>
     </div>
 

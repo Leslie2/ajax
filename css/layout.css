@@ -4,8 +4,11 @@ body {
     padding-top: 3%;
     padding-bottom: 5%;
     font-family: "Indie Flower", "avenir", serif;
-    color: white;
-    background-color:skyblue;
+    color: #35353a;
+    background-image:url(/bilder/kocken2.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 
@@ -15,13 +18,13 @@ html {
 }
 
 button {
-    background-color: transparent;
-    color: white;
-    font-size: 16px;
+    background-color: #35353a;
+    color: rgba(255,255,255,0.8);
+    font-size: 30px;
     font-weight: normal;
     line-height: 1.42857143;
     border-radius: 12px;
-    border: 2px solid white;
+    border: 2px solid #35353a;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -40,19 +43,21 @@ button {
 }
 
 button:hover {
-    background-color: white;
-    color: skyblue;
+    background-color: darkgrey;
+    color: rgba(255,255,255,0.8);
     text-decoration: none;
+    border-radius: 12px;
+    border: 2px solid darkgrey;
 }
 
 .button {
-    background-color: transparent;
-    color: white;
-    font-size: 16px;
+    background-color: #35353a;
+    color: rgba(255,255,255,0.8);
+    font-size: 30px;
     font-weight: normal;
     line-height: 1.42857143;
     border-radius: 12px;
-    border: 2px solid white;
+    border: 2px solid #35353a;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -92,6 +97,11 @@ input {
     border-radius: 12px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
+}
+
+.formular {
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 30px 30px 30px 30px;
 }
 
 /*Berufe*/
