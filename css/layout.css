@@ -1,0 +1,162 @@
+/*Grundsätzlich*/
+
+body {
+    padding-top: 3%;
+    padding-bottom: 5%;
+    font-family: "Indie Flower", "avenir", serif;
+    color: white;
+    background-color:skyblue;
+}
+
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    border-radius: 12px;
+    border: 2px solid white;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 6px 12px;
+    margin-top: 5%;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+}
+
+button:hover {
+    background-color: white;
+    color: skyblue;
+    text-decoration: none;
+}
+
+.button {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    border-radius: 12px;
+    border: 2px solid white;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 6px 12px;
+    margin-top: 5%;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+}
+
+.button:hover {
+    background-color: white;
+    color: skyblue;
+    text-decoration: none;
+}
+
+/*Startseite*/
+
+input {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 3%;
+    background-color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: black; !important
+    border: 2px solid white;
+    border-radius: 12px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+/*Berufe*/
+
+.berufe {
+    height:500px;
+    background-color:white;
+    background: url(images/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*Scroll*/
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+  padding: 7px 16px;
+  border: 2px solid black;
+  border-radius: 100% !important;
+  font-size: 40px;
+  color: black;
+  background: transparent;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.btn-circle:hover,
+.btn-circle:focus {
+  outline: none;
+  color: black;
+  background: rgba(255, 255, 255, 0.1);
+}
+.btn-circle i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+}
+.btn-circle:hover i.animated {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+.content-box {
+    background-color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: skyblue;
+    border: 2px solid white;
+    border-radius: 12px;
+    width: 200px;
+    height: auto;
+}
+
+/*Startseite*/
+
+div {
+    padding-top: %;
+}

@@ -1,0 +1,25 @@
+.navigation {
+  padding-top:5%;
+}
+
+.tabelle {
+  padding-top:10%;
+}
+
+a {
+  color: black !important;
+}
+
+a:active,
+a:hover {
+  color: white !important;
+  background-color: black !important;
+}
+
+.texteingabe {
+  width: 100%;
+}
+
+.breite {
+  width: auto;
+}
