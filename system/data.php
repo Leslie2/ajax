@@ -1,7 +1,7 @@
 <?php
   function get_db_connection()
   {
-      $db = mysqli_connect('localhost', '717416_3_1', 'T9VXwZxtsGS7', '717416_3_1')
+      $db = mysqli_connect('localhost', '199010_6_1', '0iQBtXwNfSZU', '199010_6_1')
        or die('Fehler beim Verbinden mit dem MySQL-Server.');
       mysqli_query($db, "utf8");
       return $db;
