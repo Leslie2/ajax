@@ -36,3 +36,10 @@ $(document).ready(function(){
         $('#kontaktformular').hide();
     });
 });
+    
+$(document).ready(function(){
+    // bei Klick auf die Gutscheine, Gutscheine einblenden (mit slide nach unten)
+    $('.fleisch').click(function(){
+        $('#gutscheine').slideDown();
+    });
+});
