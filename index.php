@@ -1,5 +1,16 @@
+
+
+
+
+
 <?php
 
+<<<<<<< HEAD
+=======
+//Da kommt ajax Code mit (javascript 6 zeilen) rein. mit jquery die daten an unsere ID "bild" hängen. mit js bildpfad an ein imagetag hängen.
+
+
+>>>>>>> a42660a38807aaef0534601a2fc52b10ca2aa8b2
   session_start();
   if (isset($_SESSION['id'])) unset($_SESSION['id']);
   session_destroy();
@@ -14,13 +25,15 @@
   $success = false;
   $success_msg = "";
 
+  //registrierung
+
   if(isset($_POST['start'])){
-    if (!empty($_POST['vorname']) && !empty($_POST['nachname']) && !empty($_POST['geburtsdatum']) && !empty($_POST['email'])) {
+    if (!empty($_POST['vorname']) && !empty($_POST['nachname']) && !empty($_POST['email'])) {
       $vorname = filter_data($_POST['vorname']);
       $nachname = filter_data($_POST['nachname']);
-      $geburtsdatum = filter_data($_POST['geburtsdatum']);
       $email = filter_data($_POST['email']);
-      $register_id = register($vorname, $nachname, $geburtsdatum, $email);
+
+      $register_id = register($vorname, $nachname, $email);
       //$register_id = mysqli_fetch_assoc($result);
       echo $register_id;
       $success = true;
@@ -35,7 +48,10 @@
   }
 
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 83dd99e82c8d008b3eece057fe534e5c5e317fd1
 ?>
 <!DOCTYPE html>
 <html lang="de">
