@@ -43,5 +43,11 @@ $(document).ready(function(){
     $('.fleisch').click(function(){
         $('#gutscheine').slideDown();
     });
+     $('.veggie').click(function(){
+        $('#gutscheine').slideDown();
+    });
+     $('.vegan').click(function(){
+        $('#gutscheine').slideDown();
+    });
 
 });
