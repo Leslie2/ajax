@@ -30,16 +30,18 @@ $(function() {
 */
 
 $(document).ready(function(){
+    
+    $('#gutscheine').hide();
+    
     // bei Klick auf den weiterbutten, Gutschein container einblenden (mit slide nach unten)
     $('.weiterbtn').click(function(){
         $('#gutschein').slideDown();
         $('#kontaktformular').hide();
     });
-});
     
-$(document).ready(function(){
     // bei Klick auf die Gutscheine, Gutscheine einblenden (mit slide nach unten)
     $('.fleisch').click(function(){
         $('#gutscheine').slideDown();
     });
+
 });

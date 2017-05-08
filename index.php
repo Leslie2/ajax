@@ -86,17 +86,17 @@
                             <!--Vorname-->
                             <div class="form-group">
                                 <label for="InputVorname">Vorname</label>
-                                <input type="text" name="vorname" class="" id="vorname" placeholder="Vorname" value="Urs">
+                                <input type="text" name="vorname" id="vorname" placeholder="Vorname" value="Urs">
                             </div>
                             <!--Nachname-->
                             <div class="form-group">
                                 <label for="InputNachname">Nachname</label>
-                                <input type="text" name="nachname" class="" id="nachname" placeholder="Nachname" value="Thöny">
+                                <input type="text" name="nachname" id="nachname" placeholder="Nachname" value="Thöny">
                             </div>
                             <!--eMail-->
                             <div class="form-group">
                                 <label for="InputEmail">E-Mail Adresse</label>
-                                <input type="email" name="email" class="" id="email" placeholder="E-Mail" value="urs@thoeny.ch">
+                                <input type="email" name="email" id="email" placeholder="E-Mail" value="urs@thoeny.ch">
                             </div>
                             <!--Start-->
                             <div class="col-md-offset-10 col-md-2">
@@ -124,10 +124,10 @@
                         <input type="button" name="fleisch" class="fleisch" value="Fleisch">
                     </div>
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%">
-                         <button type="button" class="">Veggie</button> 
+                         <input type="button" name="veggie" class="veggie" value="Veggie">
                     </div>
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
-                         <button type="button" class="">Vegan</button> 
+                         <input type="button" name="vegan" class="vegan" value="Vegan"> 
                     </div>           
                 </div>
 
@@ -136,11 +136,11 @@
                     <form action="index.php" method="post">
                         <!--Gutschein 1-->
                         <div class="col-md-6">
-                            <input type="submit" name="gutschein1" class="" value="Gutschein 1" style="padding-top:10%; padding-bottom:10%;">
+                            <input type="submit" name="gutschein1" value="Gutschein 1" style="padding-top:10%; padding-bottom:10%;">
                         </div>
                         <!--Gutschein 2-->
                         <div class="col-md-6" >
-                            <input type="submit" name="gitschein2" class="" value="Gutschein 2" style="padding-top:10%; padding-bottom:10%;">
+                            <input type="submit" name="gitschein2" value="Gutschein 2" style="padding-top:10%; padding-bottom:10%;">
                         </div>
                     </form>
                 </div>
