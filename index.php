@@ -1,4 +1,13 @@
+
+
+
+
+
 <?php
+
+//Da kommt ajax Code mit (javascript 6 zeilen) rein. mit jquery die daten an unsere ID "bild" hängen. mit js bildpfad an ein imagetag hängen.
+
+
   session_start();
   if (isset($_SESSION['id'])) unset($_SESSION['id']);
   session_destroy();
@@ -13,13 +22,15 @@
   $success = false;
   $success_msg = "";
 
+  //registrierung
+
   if(isset($_POST['start'])){
-    if (!empty($_POST['vorname']) && !empty($_POST['nachname']) && !empty($_POST['geburtsdatum']) && !empty($_POST['email'])) {
+    if (!empty($_POST['vorname']) && !empty($_POST['nachname']) && !empty($_POST['email'])) {
       $vorname = filter_data($_POST['vorname']);
       $nachname = filter_data($_POST['nachname']);
-      $geburtsdatum = filter_data($_POST['geburtsdatum']);
       $email = filter_data($_POST['email']);
-      $register_id = register($vorname, $nachname, $geburtsdatum, $email);
+
+      $register_id = register($vorname, $nachname, $email);
       //$register_id = mysqli_fetch_assoc($result);
       echo $register_id;
       $success = true;
@@ -32,6 +43,7 @@
       $error_msg .= "Bitte fülle alle Felder aus.<br/>";
     }
   }
+
 
 ?>
 <!DOCTYPE html>
@@ -99,7 +111,7 @@
                             </div>
                         </form>
                     </div>
-                        
+
             </div>
         </div>
     </div>
@@ -118,16 +130,16 @@
                 <!--Kategorien-->
                 <div class="col-md-offset-3 col-md-10">
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
-                         <button type="button">Fleisch</button> 
+                         <button type="button">Fleisch</button>
                     </div>
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%">
-                         <button type="button">Veggie</button> 
+                         <button type="button">Veggie</button>
                     </div>
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
-                         <button type="button">Vegan</button> 
-                    </div>           
+                         <button type="button">Vegan</button>
+                    </div>
                 </div>
-            
+
                 <!--Gutscheine-->
                  <div class="col-md-12" style="padding-top:3%; padding-bottom:5%">
                     <form action="index.php" method="post">
@@ -141,7 +153,7 @@
                         </div>
                     </form>
                 </div>
-            
+
                 <!--Registrieren-->
                 <div class="col-md-12" style="padding-top:3%; padding-bottom:5%">
                     <form action="index.php" method="post">
