@@ -144,19 +144,19 @@
                         <input type="button" name="fleisch" class="fleisch" value="Fleisch">
                     </div>
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%">
-<<<<<<< .merge_file_rdH9h8
-                         <button type="button" class="">Veggie</button>
+
+                         <button type="button" class="Veggie"/button>
                     </div>
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
-                         <button type="button" class="">Vegan</button>
+                         <button type="button" class="Vegan"/button>
                     </div>
-=======
+
                          <input type="button" name="veggie" class="veggie" value="Veggie">
                     </div>
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
                          <input type="button" name="vegan" class="vegan" value="Vegan">
                     </div>
->>>>>>> .merge_file_QlasN0
+
                 </div>
 
                 <!--Gutscheine-->
