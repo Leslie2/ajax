@@ -63,8 +63,9 @@
 
 <body>
 
+<br>
 <!--Kontaktformular-->
-    <div class="container content formular" >
+    <div class="container content formular" id="kontaktformular">
         <div class="row">
 
                 <!--Welcome Text-->
@@ -99,7 +100,7 @@
                             </div>
                             <!--Start-->
                             <div class="col-md-offset-10 col-md-2">
-                                <input type="submit" name="weiter" class="" value="weiter">
+                                <input type="button" name="weiter" class="weiterbtn" value="weiter">
                             </div>
                         </form>
                     </div>
@@ -109,7 +110,7 @@
     </div>
     <br>
     <!--Gutschein-->
-       <div class="container content formular" >
+       <div class="container content formular" id="gutschein">
         <div class="row">
 
                 <!--Welcome Text-->
