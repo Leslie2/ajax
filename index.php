@@ -143,6 +143,7 @@
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
                         <input type="button" name="fleisch" class="fleisch" value="Fleisch">
                     </div>
+<<<<<<< HEAD
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%">
 
                          <button type="button" class="Veggie"/button>
@@ -151,6 +152,9 @@
                          <button type="button" class="Vegan"/button>
                     </div>
 
+=======
+                    <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
+>>>>>>> c989eb5b3832a157c9ad7f174fdc3c0c93ab819a
                          <input type="button" name="veggie" class="veggie" value="Veggie">
                     </div>
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
@@ -159,6 +163,29 @@
 
                 </div>
 
+            <script>
+                $(document).ready(function()
+                                 {
+                    $("#fetchval").on('change', function()
+                                      {
+                        var value = $(this).val();
+                        $.ajax(
+                        {
+                            url:'fetch.php',
+                            type:'POST',
+                            data:'request='+value,
+                            beforeSend:function()
+                            {
+                                $("#gutschein").html('working on...');
+                            },
+                            success:function(data)
+                            {
+                                $("#gutschein").html(data);
+                            },
+                        });
+                    });
+                });
+            </script>
                 <!--Gutscheine-->
                  <div class="col-md-12" style="padding-top:3%; padding-bottom:5%" id="gutscheine">
                     <form action="index.php" method="post">
@@ -182,6 +209,22 @@
                         </div>
                     </form>
                 </div>
+
+            <?php
+
+            $conn=mysqli_connect('localhost','root','','work');
+            $query="select * from gutschein";
+            $result=mysqli_query($conn,$query);
+            echo 'Bild Pfad';
+            while($output=mysqli_fetch_assoc($result))
+            {
+               echo '<img>'.$output['bild_pfad'].'</img>';
+            };
+            echo '';
+            mysqli_close($conn);
+
+            ?>
+
         </div>
     </div>
 
