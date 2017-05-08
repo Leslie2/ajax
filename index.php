@@ -1,16 +1,5 @@
-
-
-
-
-
 <?php
 
-<<<<<<< HEAD
-=======
-//Da kommt ajax Code mit (javascript 6 zeilen) rein. mit jquery die daten an unsere ID "bild" hängen. mit js bildpfad an ein imagetag hängen.
-
-
->>>>>>> a42660a38807aaef0534601a2fc52b10ca2aa8b2
   session_start();
   if (isset($_SESSION['id'])) unset($_SESSION['id']);
   session_destroy();
@@ -47,12 +36,8 @@
     }
   }
 
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 83dd99e82c8d008b3eece057fe534e5c5e317fd1
 ?>
+
 <!DOCTYPE html>
 <html lang="de">
 
@@ -128,17 +113,14 @@
         <div class="row">
 
                 <!--Welcome Text-->
-                <div class="col-md-12">
-                    <div class="col-md-6" style="padding-top:; text-align: justify;">
+                <div class="col-md-6" style="padding-top:; text-align: justify;">
                         <h1 style="padding-bottom:5%;">Toby würde gerne wissen, <br><b>bist du...</b></h1>
-                    </div>
                 </div>
 
                 <!--Kategorien-->
                 <div class="col-md-offset-3 col-md-10">
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
-<<<<<<< HEAD
-                         <input type="button" name="fleisch" class="fleisch" value="Fleisch">
+                        <input type="button" name="fleisch" class="fleisch" value="Fleisch">
                     </div>
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%">
                          <button type="button" class="">Veggie</button> 
@@ -146,16 +128,6 @@
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
                          <button type="button" class="">Vegan</button> 
                     </div>           
-=======
-                         <button type="button">Fleisch</button>
-                    </div>
-                    <div class="col-md-2" style="padding-top:3%; padding-bottom:5%">
-                         <button type="button">Veggie</button>
-                    </div>
-                    <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
-                         <button type="button">Vegan</button>
-                    </div>
->>>>>>> 83dd99e82c8d008b3eece057fe534e5c5e317fd1
                 </div>
 
                 <!--Gutscheine-->
@@ -184,18 +156,6 @@
         </div>
     </div>
 
-    <?php
-      if($error == true) {
-    ?>
-      <div class="col-md-12">
-        <div class="col-md-offset-3 col-md-6" >
-          <div style="margin-top:10%;" class="alert alert-danger" role="alert"><?php echo $error_msg; ?></div>
-        </div>
-      </div>
-    <?php
-      }
-    ?>
-
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -203,6 +163,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
