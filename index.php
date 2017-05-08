@@ -49,9 +49,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/layout.css" rel="stylesheet">
 
 
@@ -60,11 +58,10 @@
 <body>
 
 <!--Kontaktformular-->
-    <div class="container content formular" >
+    <div class="container content formular"  id="kontaktformular">
         <div class="row">
 
                 <!--Welcome Text-->
-                <div class="col-md-12">
                     <div class="col-md-6" style="padding-top:; text-align: justify;">
                         <h1 style="padding-bottom:5%;">Registrierung für Newsletter<br><b>Kochen mit Toby</b></h1>
                         <p style="padding-bottom:5%;">Hier kannst du dich für den Newletter eintragen.
@@ -95,17 +92,17 @@
                             </div>
                             <!--Start-->
                             <div class="col-md-offset-10 col-md-2">
-                                <input type="submit" name="weiter" class="" value="weiter">
+                                <input type="button" name="weiter" class="weiterbtn" value="weiter">
                             </div>
                         </form>
                     </div>
                         
-            </div>
         </div>
     </div>
     <br>
-    <!--Gutschein-->
-       <div class="container content formular" >
+
+<!--Gutschein-->
+       <div class="container content formular" id="gutschein">
         <div class="row">
 
                 <!--Welcome Text-->
@@ -169,6 +166,7 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
