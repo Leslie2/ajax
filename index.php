@@ -14,6 +14,37 @@
   $success = false;
   $success_msg = "";
 
+
+
+
+//ajax aus internet
+
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   //registrierung
 
   if(isset($_POST['start'])){
@@ -124,11 +155,11 @@
                         <input type="button" name="fleisch" class="fleisch" value="Fleisch">
                     </div>
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%">
-                         <button type="button" class="">Veggie</button> 
+                         <button type="button" class="">Veggie</button>
                     </div>
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
-                         <button type="button" class="">Vegan</button> 
-                    </div>           
+                         <button type="button" class="">Vegan</button>
+                    </div>
                 </div>
 
                 <!--Gutscheine-->
