@@ -116,18 +116,18 @@
                 <!--Kategorien-->
                 <div class="col-md-offset-3 col-md-10">
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
-                         <button type="button">Fleisch</button> 
+                         <input type="button" name="fleisch" class="fleisch" value="Fleisch">
                     </div>
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%">
-                         <button type="button">Veggie</button> 
+                         <button type="button" class="">Veggie</button> 
                     </div>
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
-                         <button type="button">Vegan</button> 
+                         <button type="button" class="">Vegan</button> 
                     </div>           
                 </div>
             
                 <!--Gutscheine-->
-                 <div class="col-md-12" style="padding-top:3%; padding-bottom:5%">
+                 <div class="col-md-12" style="padding-top:3%; padding-bottom:5%" id="gutscheine">
                     <form action="index.php" method="post">
                         <!--Gutschein 1-->
                         <div class="col-md-6">
