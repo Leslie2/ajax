@@ -33,6 +33,8 @@
     }
   }
 
+
+
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -49,20 +51,22 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/layout.css" rel="stylesheet">
 
 
 </head>
 
 <body>
-<br>
 
 <!--Kontaktformular-->
-    <div class="container content formular"  id="kontaktformular">
+    <div class="container content formular" >
         <div class="row">
 
                 <!--Welcome Text-->
+                <div class="col-md-12">
                     <div class="col-md-6" style="padding-top:; text-align: justify;">
                         <h1 style="padding-bottom:5%;">Registrierung für Newsletter<br><b>Kochen mit Toby</b></h1>
                         <p style="padding-bottom:5%;">Hier kannst du dich für den Newletter eintragen.
@@ -93,17 +97,17 @@
                             </div>
                             <!--Start-->
                             <div class="col-md-offset-10 col-md-2">
-                                <input type="button" name="weiter" class="weiterbtn" value="weiter">
+                                <input type="submit" name="weiter" class="" value="weiter">
                             </div>
                         </form>
                     </div>
-                        
+
+            </div>
         </div>
     </div>
     <br>
-
-<!--Gutschein-->
-       <div class="container content formular" id="gutschein">
+    <!--Gutschein-->
+       <div class="container content formular" >
         <div class="row">
 
                 <!--Welcome Text-->
@@ -116,6 +120,7 @@
                 <!--Kategorien-->
                 <div class="col-md-offset-3 col-md-10">
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
+<<<<<<< HEAD
                          <input type="button" name="fleisch" class="fleisch" value="Fleisch">
                     </div>
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%">
@@ -124,8 +129,18 @@
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
                          <button type="button" class="">Vegan</button> 
                     </div>           
+=======
+                         <button type="button">Fleisch</button>
+                    </div>
+                    <div class="col-md-2" style="padding-top:3%; padding-bottom:5%">
+                         <button type="button">Veggie</button>
+                    </div>
+                    <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
+                         <button type="button">Vegan</button>
+                    </div>
+>>>>>>> 83dd99e82c8d008b3eece057fe534e5c5e317fd1
                 </div>
-            
+
                 <!--Gutscheine-->
                  <div class="col-md-12" style="padding-top:3%; padding-bottom:5%" id="gutscheine">
                     <form action="index.php" method="post">
@@ -139,7 +154,7 @@
                         </div>
                     </form>
                 </div>
-            
+
                 <!--Registrieren-->
                 <div class="col-md-12" style="padding-top:3%; padding-bottom:5%">
                     <form action="index.php" method="post">
@@ -167,7 +182,6 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-    <script src="js/main.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
