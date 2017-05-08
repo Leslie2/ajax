@@ -1,3 +1,4 @@
+/*
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -26,4 +27,12 @@ $(function() {
         event.preventDefault();
     });
 });
+*/
 
+$(document).ready(function(){
+    // bei Klick auf den weiterbutten, Gutschein container einblenden (mit slide nach unten)
+    $('.weiterbtn').click(function(){
+        $('#gutschein').slideDown();
+        $('#kontaktformular').hide();
+    });
+});

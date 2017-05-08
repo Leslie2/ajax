@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
   function get_db_connection()
   {
       $db = mysqli_connect('localhost', '199010_6_1', '0iQBtXwNfSZU', '199010_6_1')
@@ -147,5 +148,8 @@
 
 
 //SELECT user_id, kat_id, COUNT(kat_id) FROM `user_antworten` WHERE user_id = 114 GROUP BY kat_id;
+=======
+ 
+>>>>>>> 83dd99e82c8d008b3eece057fe534e5c5e317fd1
 
  ?>

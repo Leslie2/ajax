@@ -1,21 +1,16 @@
 /*Grundsätzlich*/
 
 body {
-    padding-top: 3%;
-    padding-bottom: 5%;
     font-family: "Indie Flower", "avenir", serif;
     color: #35353a;
     background-image:url(/bilder/kocken2.jpeg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+/*     width: 100%;
+    min-height: 100vh; */
 }
 
-
-html {
-  width: 100%;
-  height: 100%;
-}
 
 button {
     background-color: #35353a;
@@ -102,6 +97,8 @@ input {
 .formular {
     background-color: rgba(255,255,255,0.8);
     border-radius: 30px 30px 30px 30px;
+/*    margin-top: 3%;
+    margin-bottom: 5%; */
 }
 
 /*Berufe*/
@@ -169,4 +166,10 @@ input {
 
 div {
     padding-top: %;
+}
+
+
+
+#gutschein{
+    display: none;
 }
