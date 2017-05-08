@@ -1,4 +1,4 @@
-//ajax
+
 
 <?php
 require_once('system/data.php');
@@ -12,6 +12,6 @@ if(isset($_POST['posttext'])){
   $gutschein = mysqli_fetch_assoc(get_gutschein($id));
 
 
- php echo $post['text'] 
+  echo $gutschein['bild/bild/Gutschein_Fleisch_1'];
 
  ?>

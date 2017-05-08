@@ -30,17 +30,25 @@ $(function() {
 */
 
 $(document).ready(function(){
-    
+
     $('#gutscheine').hide();
-    
+
     // bei Klick auf den weiterbutten, Gutschein container einblenden (mit slide nach unten)
     $('.weiterbtn').click(function(){
         $('#gutschein').slideDown();
         $('#kontaktformular').hide();
     });
-    
+
     // bei Klick auf die Gutscheine, Gutscheine einblenden (mit slide nach unten)
     $('.fleisch').click(function(){
+        $.ajax
+        url: "ajax.php"
+        data: { name: "John" }
+        success (data) {
+          $(img).append
+        }
+
+
         $('#gutscheine').slideDown();
     });
      $('.veggie').click(function(){

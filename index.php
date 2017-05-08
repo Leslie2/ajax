@@ -1,34 +1,25 @@
+
+
+
+
+
+
+
+
+
+
 <?php
-
-  session_start();
-  if (isset($_SESSION['id'])) unset($_SESSION['id']);
-  session_destroy();
-
-  require_once ('system/data.php');
-  require_once ('system/security.php');
-
-  $db = get_db_connection();
-
-  $error = false;
-  $error_msg = "";
-  $success = false;
-  $success_msg = "";
-
-
-
-
-//ajax aus internet
-
-function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-     document.getElementById("demo").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", "ajax_info.txt", true);
-  xhttp.send();
-}
+  if($success == true){
+?>
+      <div class="alert alert-success" role="alert"><?php echo $success_msg; ?></div>
+<?php
+  }
+  if($error == true){
+?>
+      <div class="alert alert-danger" role="alert"><?php echo $error_msg; ?></div>
+<?php
+  }
+?>
 
 
 
@@ -43,10 +34,8 @@ function loadDoc() {
 
 
 
-
-
-  //registrierung
-
+<?php
+//registrierung
   if(isset($_POST['start'])){
     if (!empty($_POST['vorname']) && !empty($_POST['nachname']) && !empty($_POST['email'])) {
       $vorname = filter_data($_POST['vorname']);
@@ -165,8 +154,8 @@ function loadDoc() {
                          <input type="button" name="veggie" class="veggie" value="Veggie">
                     </div>
                     <div class="col-md-2" style="padding-top:3%; padding-bottom:5%;">
-                         <input type="button" name="vegan" class="vegan" value="Vegan"> 
-                    </div>           
+                         <input type="button" name="vegan" class="vegan" value="Vegan">
+                    </div>
 >>>>>>> .merge_file_QlasN0
                 </div>
 
